@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css" />
+	<link rel="stylesheet" href="style/reset.css" />
+	<link href="favicon.ico" rel="shortcut icon" />
+	<script src="js/jquery-1.6.2.min.js"></script>
+    <script src="js/index.js"></script>
+    <style>
+        .content{
+            width: 100%;
+            height: 500px;
+            background:#000;
+            background-size: cover;
+        }
+        .singerContent{
+            width: 840px;
+            height: 100%;
+            margin: 10px auto 0px;
+            background:red;
+        }
+        .singerContent .album{
+            float: left;
+            width:262px;
+            height: 262px;
+            margin-bottom: 25px;
+            background: url(//www.kugou.com/yy/static/images/play/default.jpg) no-repeat left top;
+        }
+    </style>
+    <title>歌曲详情</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="logo">
+            <a href="index.html">
+                <img src="image/logo.png" style="width: 225px;height: 55px;margin-top: -12px;" alt="logo" />
+            </a>
+        </h1>
+        <div class="search">
+            <div class="search_input">
+                <input type="text" placeholder="正云 下定决心忘记你" />
+                <div class="search_btn">
+                    <i class="search_icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="toNav">
+            <div id="login_area" class="login_area">
+                <div id="login_in" class="login_in">
+                    <a id="login_btn" class="login_btn">登录</a>
+                    <a target="_blank" href="register.html" class="regin_btn" id="regin_btn">注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navWrap">
+        <div class="nav">
+            <ul class="homeNav">
+                <li>
+                    <a class="normal active" href="#">首页</a>
+                </li>
+                <li>
+                    <a class="normal" href="#">推荐</a>
+                </li>
+                <li>
+                    <a class="normal" href="#">榜单</a>
+                </li>
+                <li>
+                    <a class="normal" href="#">个人信息</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="singerContent">
+            <div class="album">
+                <div class="albumImg">
+                    <a href="##"><img src="image\T1fHd4BXd_1RCvBVdK.jpg_240x240.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="songContent"></div>
+        </div>
+    </div>
+</body>
+
+</html>

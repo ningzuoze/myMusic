@@ -1,0 +1,1283 @@
+/*head开始*/
+
+.header {
+	width: 1000px;
+	height: 78px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 153px;
+	height: 37px;
+	display: inline-block;
+	position: absolute;
+	top: 20px;
+	left: -28px;
+}
+
+.search {
+	width: 300px;
+	height: 36px;
+	margin-left: 193px;
+	padding-top: 20px;
+	position: relative;
+}
+
+.search_input {
+	position: relative;
+	width: 298px;
+	height: 34px;
+	border: 1px solid #ccc;
+	line-height: 34px;
+}
+
+.search_input input {
+	width: 249px;
+	height: 24px;
+	color: #666;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-left: 14px;
+	padding: 5px 0;
+	border: medium none;
+	outline: none;
+}
+
+.search_btn {
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 0;
+	border: none;
+	padding: 0;
+	background: 0 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.search_btn i {
+	display: block;
+	margin: 9px 0 0 9px;
+	width: 16px;
+	height: 16px;
+	background: url(../image/Snap2.jpg) no-repeat;
+	cursor: pointer;
+}
+
+.search_btn i:hover {
+	background: url(../image/Snap2hover.jpg) no-repeat;
+}
+
+.toNav {
+	float: right;
+	position: absolute;
+	top: 30px;
+	right: 0;
+}
+
+.toNav ul {
+	float: left;
+	width: 250px;
+	border-right: 1px solid #e6e6e6;
+	padding-right: 11px;
+	text-align: right;
+}
+
+.toNav li {
+	float: left;
+	padding: 0px 15px;
+	list-style: none;
+}
+
+.toNav li a {
+	font-size: 13px;
+	color: #777;
+	outline: none;
+}
+
+.toNav li a:hover {
+	color: #529fb1;
+}
+
+.login_area {
+	position: relative;
+	float: left;
+	margin-top: -5px;
+	margin-left: 30px;
+}
+
+#login_in a {
+	width: 60px;
+	height: 35px;
+	background-color: #529fb1;
+	color: #FFFFFF;
+	line-height: 35px;
+	display: block;
+	float: left;
+	border: 1px solid #529fb1;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+#login_in a:hover {
+	color: #FFFFFF;
+	border: 1px solid #337ba3;
+	background-color: #337ba3;
+}
+
+#login_in a.regin_btn {
+	border: 1px solid #dbdbdb;
+	background-color: #FFFFFF;
+	color: #777777;
+	margin-left: 10px;
+}
+
+#login_in a.regin_btn:hover {
+	border: 1px solid #337ba3;
+	background-color: #fff;
+	color: #337ba3;
+}
+
+.login_popup {
+	display: none;
+}
+
+.login_popup .popup_bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: 0.6;
+	z-index: 9999;
+}
+
+.login_popup .popup {
+	position: fixed;
+	margin-left: -220px;
+	left: 50%;
+	top: 20%;
+	width: 440px;
+	height: 340px;
+	background: #fff;
+	z-index: 10000;
+}
+
+.login_popup .popup_close {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	float: right;
+	text-align: center;
+}
+
+.login_popup .popup_close:hover span {
+	font-size: 22px;
+	color: #666;
+}
+
+.login_popup .popup_close span {
+	font-size: 20px;
+	color: #888;
+}
+
+.login_popup .popup_content {
+	float: left;
+	margin-left: 50px;
+}
+
+.popup_content_tl {
+	font-size: 24px;
+	font-family: "Microsoft YaHei";
+	color: #4b4f55;
+	margin-bottom: 10px;
+}
+
+.popup_content_uname,
+.popup_content_upassword {
+	width: 320px;
+	height: 22px;
+	border: 1px solid #ccc;
+	background: #f6f6f6;
+	padding: 7px 10px;
+}
+
+.popup_content_verify {
+	float: left;
+	width: 242px;
+	height: 28px;
+	margin-right: 11px;
+	margin-bottom: 20px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	padding-left: 7px;
+}
+
+.popup_content_verify #verify {
+	border: none;
+	width: 80px;
+}
+
+.popup_content_uname {
+	margin-bottom: 17px;
+}
+
+.popup_content_upassword {
+	margin-bottom: 17px;
+}
+
+.popup_content_uname label,
+.popup_content_upassword label,
+.popup_content_verify label {
+	color: #7b7b7b;
+}
+
+#UserName,
+#UserPassword {
+	border: none;
+	width: 270px;
+	height: 22px;
+	line-height: 22px;
+	padding: 0;
+	background: transparent;
+	color: #a1a1a1;
+}
+
+.popup_content_inout .sBtn {
+	width: 342px;
+	height: 40px;
+	font-size: 15px;
+	background: #529fb1;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.popup_content_inout .sBtn:hover {
+	background: #3f8aa9;
+}
+
+
+/*head部分结束*/
+
+
+/*navWrap部分*/
+
+.navWrap {
+	position: relative;
+	z-index: 999;
+	width: 100%;
+	height: 55px;
+	background-color: #232323;
+}
+
+.navWrap .nav {
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.navWrap .homeNav {
+	display: inline-block;
+	float: left;
+}
+
+.navWrap .homeNav li {
+	display: inline-block;
+	height: 55px;
+	line-height: 55px;
+	float: left;
+}
+
+.navWrap .nav a {
+	font-size: 16px;
+	color: #ddd;
+}
+
+.navWrap .homeNav li a.normal {
+	display: block;
+	padding: 0 30px;
+}
+
+.navWrap .homeNav li a.normal.active,
+.navWrap .homeNav li a.normal:hover {
+	background-color: #3f8aa9;
+	color: #fff;
+}
+
+
+/*nav结束*/
+
+
+/*sliderWrap部分*/
+
+.SowingMap {
+	position: relative;
+	width: 100%;
+}
+
+.SowingMapImg img {
+	z-index: 0;
+	width: 100%;
+	height: 550px;
+}
+
+.SowingMapNext,
+.SowingMapPrev {
+	position: absolute;
+	width: 50px;
+	height: 150px;
+	line-height: 150px;
+	font-size: 50px;
+	color: rgba(255, 255, 255, .5);
+	background: rgba(0, 0, 0, .2);
+}
+
+.SowingMapNext:hover,
+.SowingMapPrev:hover {
+	color: rgba(255, 255, 255, .8);
+	background: rgba(0, 0, 0, .5);
+	cursor: pointer;
+}
+
+.SowingMapPrev {
+	top: 35%;
+}
+
+.SowingMapNext {
+	right: 0px;
+	top: 35%;
+}
+
+.SowingMap_nav {
+	z-index: 1;
+	position: absolute;
+	bottom: 22px;
+	width: 100%;
+	height: 55px;
+	background: rgba(0, 0, 0, .7);
+}
+
+.SowingMap_nav .pages {
+	margin: 0 auto;
+	width: 150px;
+}
+
+.SowingMap_nav .pages ul {
+	margin-top: 19px;
+	margin-left: 15px;
+	list-style: none;
+}
+
+.SowingMap_nav .pages ul li {
+	cursor: pointer;
+	float: left;
+	margin-left: 15px;
+	border-radius: 15px;
+	width: 10px;
+	height: 10px;
+	background: #888888;
+}
+
+.SowingMap_nav .pages .active {
+	width: 11px;
+	height: 11px;
+	background: #fff;
+}
+
+@media (max-width: 1370px) {
+	.SowingMap {
+		width: 100%;
+	}
+	.SowingMapImg img {
+		width: 100%;
+		height: 400px;
+	}
+	.SowingMap_nav {
+		height: 45px;
+	}
+}
+
+
+/*sliderWrap结束*/
+
+
+/*content开始*/
+
+.content {
+	position: relative;
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.subContentM {
+	height: 390px;
+	margin-top: 40px;
+}
+
+.selectSongList {
+	float: left;
+	width: 650px;
+	overflow: hidden;
+}
+
+.selectSongList .itemTitle {
+	background: url(../image/selectlist.jpg) no-repeat 0 0;
+}
+
+.itemTitle {
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.itemTitle h3 {
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin-right: 25px;
+	color: #555;
+	font-size: 0;
+	float: left;
+}
+
+.itemTitle .morefr {
+	margin-top: 7px;
+	color: #999;
+	float: right;
+}
+
+.itemTitle a.morefr:hover {
+	color: #529fb1;
+}
+
+.selectSongList .itemContent {
+	width: 660px;
+}
+
+.selectSongList .cptBig {
+	width: 325px;
+	height: 325px;
+	margin-right: 5px;
+	float: left;
+	position: relative;
+}
+
+.cpt .cptT {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 152px;
+	padding-right: 8px;
+	height: 30px;
+	line-height: 30px;
+	background: url(../image/cptTBg.png) no-repeat right center;
+	color: #FFFFFF;
+	text-align: right;
+	z-index: 2;
+}
+
+.selectSongList .itemContent .icon-select_icon {
+	margin-right: 10px;
+	position: relative;
+	top: 2px;
+}
+
+.selectSongList .itemContent .cptBig .Cover,
+.selectSongList .itemContent .cptMid .Cover {
+	display: none;
+	z-index: 9999;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.selectSongList .itemContent .cptBig:hover .Cover {
+	display: block;
+}
+
+.selectSongList .itemContent .cptMid:hover .Cover {
+	display: block;
+}
+
+.icon {
+	display: inline-block;
+}
+
+.icon-select_icon {
+	background: url(../image/sprite.png);
+	background-position: 0 -267px;
+	width: 14px;
+	height: 14px;
+}
+
+.cpt img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+}
+
+.selectSongList .cptBig {
+	width: 325px;
+}
+
+.selectSongList .cptBig .cptB {
+	width: 309px;
+}
+
+.cpt .cptB {
+	width: 144px;
+	padding: 6px 8px;
+	background: rgba(0, 0, 0, .5);
+	font-size: 14px;
+	height: 38px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.selectSongList .cptBig .cptB .songListName,
+.selectSongList .cptBig .cptB .songLisstSinger {
+	width: 295px;
+}
+
+.cpt .cptB .songListName,
+.cpt .cptB .songListSinger {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #fff;
+	line-height: 19px;
+}
+
+.cpt .cptB .songLisstSinger {
+	color: #cfcfcf;
+}
+
+.selectSongList .cptMid {
+	width: 160px;
+	height: 160px;
+	padding: 0;
+	margin: 0 5px 5px 0;
+	float: left;
+	position: relative;
+}
+
+.HotSongList {
+	width: 320px;
+	overflow: hidden;
+	float: right;
+}
+
+.HotSongList .itemTitle {
+	background: url(../image/hotlist.jpg) no-repeat 0 0;
+}
+
+.itemTitle {
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.HotSongList .itemContent {
+	overflow: hidden;
+	height: 325px;
+}
+
+.listItem {
+	height: 98px;
+	margin-bottom: 15px;
+	background-color: #f6f6f6;
+	position: relative;
+}
+
+.listItem .arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	right: 10px;
+	z-index: 20;
+}
+
+.icon-big_arrow_right {
+	background: url(../image/sprite.png) 0 -322px;
+	width: 7px;
+	height: 14px;
+}
+
+.listItem img {
+	width: 98px;
+	height: 98px;
+	float: left;
+}
+
+.listItem .list {
+	overflow: hidden;
+	width: 200px;
+	height: 68px;
+	padding: 15px 10px;
+	font-size: 14px;
+	float: left;
+}
+
+.listItem .list dt {
+	line-height: 24px;
+	color: #333;
+	font-weight: 700;
+}
+
+.listItem .list dd {
+	width: 180px;
+	line-height: 24px;
+	font-size: 14px;
+	color: #555;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.subContentM {
+	margin-top: 40px;
+}
+
+.newSongList {
+	overflow: hidden;
+	width: 650px;
+	height: 375px;
+	float: left;
+}
+
+.newSongList .itemTitle {
+	background: url(../image/newlist.jpg) no-repeat 0 0;
+	padding-bottom: 20px;
+}
+
+.hasBorder {
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 10px;
+}
+
+.itemTitle {
+	height: 30px;
+	padding-bottom: 30px;
+}
+
+.itemTitle h3 b {
+	font-weight: 400;
+	color: #529fb1;
+}
+
+.itemTitle .tabT {
+	line-height: 30px;
+	float: left;
+}
+
+.itemTitle .tabT span {
+	margin-right: 20px;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.itemTitle .tabT span:hover {
+	color: #529fb1;
+}
+
+.itemTitle .playAll {
+	border: 1px solid #DBDBDB;
+	border-radius: 2px;
+	padding: 5px 10px;
+	color: #555;
+	background: 0 0;
+	float: right;
+}
+
+.itemTitle .playAll:hover {
+	color: #529fb1;
+	border: 1px solid #529fb1;
+}
+
+.itemTitle .playAll:hover span {
+	background-position: 0 -340px;
+}
+
+.ioc {
+	display: inline-block;
+}
+
+.itemTitle .playAll .ioc-play {
+	vertical-align: middle;
+	padding: 0;
+	margin: -4px 5px 0 0;
+}
+
+.ioc-play {
+	background-position: 0 -303px;
+	width: 12px;
+	height: 14px;
+	background-image: url(../image/sprite.png);
+}
+
+.ioc-play:hover {
+	background-position: 0 -341px;
+	width: 12px;
+	height: 14px;
+}
+
+.itemTitle .playAll em {
+	font-style: normal;
+	background: 0 0;
+}
+
+.newSongList .itemContent {
+	position: relative;
+	height: 280px;
+	overflow: hidden;
+}
+
+.newSongList .tabc li {
+	height: 35px;
+	line-height: 35px;
+}
+
+.newSongList .tabc a {
+	display: block;
+	z-index: 999;
+	position: relative;
+	overflow: hidden;
+	padding: 0 10px;
+	color: #333;
+	height: 35px;
+	line-height: 35px;
+	zoom: 1;
+}
+
+.newSongList .tabc a:hover {
+	background-color: #f5f8fb;
+	color: #529fb1;
+}
+
+.newSongList .tabc .songName {
+	max-width: 500px;
+	white-space: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+
+.newSongList .tabc .songTips {
+	margin: 12px 0 0 10px;
+	padding: 12px 0 0 21px;
+	background: url(../image/first.png) no-repeat 0 0;
+	float: left;
+}
+
+.newSongList .tabc .songTime {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+.newSongList .tabc .playBtn {
+	text-indent: 999em;
+	position: absolute;
+	top: 10px;
+	right: 80px;
+	width: 12px;
+	height: 14px;
+	background-position: 0 0;
+	background: url(../image/icon_splice.png) no-repeat;
+}
+
+.newSongList .tabc .playBtn:hover {
+	background-position: 0 -30px;
+}
+
+.newSongList .tabc .downloadBtn {
+	position: absolute;
+	top: 10px;
+	right: 55px;
+	width: 15px;
+	height: 15px;
+	background: url(../image/icon_splice.png) no-repeat -90px 0;
+}
+
+.newSongList .tabc .downloadBtn:hover {
+	background-position: -90px -30px;
+}
+
+.newSongList .pages {
+	display: inline-block;
+	height: 9px;
+	padding-left: 290px;
+	margin: 10px auto 0;
+}
+
+.newSongList .p .disable {
+	background-position: 0 0;
+	height: 9px;
+}
+
+.newSongList .pages .next,
+.newSongList .pages .prev {
+	float: left;
+	display: block;
+	width: 6px;
+	height: 9px;
+	line-height: 9px;
+	margin-top: 5px;
+	text-indent: -999em;
+	background: url(../image/pageChange.jpg) no-repeat 0 0;
+	cursor: pointer;
+}
+
+.newSongList .pages .page {
+	display: inline;
+	float: left;
+	margin: 0 12px;
+	font-size: 12px;
+	color: #8d8d8d;
+}
+
+.newSongList .pages .next {
+	background-position: -13px -14px;
+}
+
+.albumlist {
+	overflow: hidden;
+	width: 320px;
+	float: right;
+}
+
+.albumlist .itemTitle {
+	background: url(../image/albumlist.jpg) no-repeat 0 0;
+	padding-bottom: 20px;
+}
+
+.itemTitle {
+	height: 30px;
+}
+
+.itemTitle h3 {
+	display: block;
+	width: 120px;
+	height: 30px;
+	margin-right: 25px;
+	color: #555;
+	font-size: 0;
+	float: left;
+}
+
+.itemTitle h3 b {
+	font-weight: 400;
+	color: #529fb1;
+}
+
+.albumlist .itemContent {
+	width: 332px;
+}
+
+.cpt {
+	position: relative;
+}
+
+.albumlist .cptBigL {
+	width: 320px;
+	height: 175px;
+	margin-bottom: 12px;
+	float: left;
+}
+
+.albumlist .cptBigL a {
+	display: block;
+	width: 320px;
+	height: 175px;
+}
+
+.albumlist .cptBigL .cptBg {
+	width: 320px;
+}
+
+.albumlist .cptBigL .cptB {
+	width: 304px;
+}
+
+.cpt .cptB .songListSinger {
+	color: #CFCFCF;
+}
+
+.albumlist .cptMidL {
+	width: 154px;
+	height: 125px;
+	margin-right: 12px;
+	float: left;
+}
+
+.albumlist .cptMidL a {
+	display: block;
+	width: 154px;
+	height: 125px;
+}
+
+.albumlist .cptMidL img {
+	position: static;
+	height: 84px;
+}
+
+.albumlist .cptMidL .cptB {
+	position: static;
+	padding: 0;
+	background: 0 0;
+}
+
+.albumlist .cptMidL .cptB .songListName {
+	width: 154px;
+	color: #444;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.albumlist .cptMidL .cptB .songListName:hover {
+	color: #529fb1;
+}
+
+.albumlist .cptMidL .cptB .songListSinger {
+	color: #888;
+	font-size: 12px;
+}
+
+.limitHeight {
+	height: 355px;
+}
+
+.HotRadio {
+	float: left;
+	overflow: hidden;
+	width: 650px;
+	height: 370px;
+}
+
+.HotRadio .itemTitle {
+	background: url(../image/hotredio.jpg) no-repeat 0 0;
+}
+
+.HotRadio .itemContent ul {
+	width: 700px;
+	display: block;
+}
+
+.HotRadio .itemContent li {
+	width: 100px;
+	margin-right: 37px;
+	margin-bottom: 25px;
+	float: left;
+}
+
+.HotRadio .itemContent a {
+	position: relative;
+	outline: none;
+}
+
+.HotRadio .itemContent a .Cover {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	visibility: visible;
+	z-index: 999;
+	background: 0 0;
+	background-size: 100% 100%;
+}
+
+.HotRadio .itemContent a .playBtn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -21px;
+	margin-left: -21px;
+}
+
+.icon-radio_play {
+	background-position: 0 -442px;
+	width: 42px;
+	height: 42px;
+	background-image: url(../image/sprite.png);
+}
+
+.HotRadio .itemContent .radiologo {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+	margin-right: 0;
+}
+
+.HotRadio .itemContent ul li .Cover {
+	display: none;
+}
+
+.HotRadio .itemContent ul li:hover .Cover {
+	display: block;
+}
+
+.HotRadio .itemContent .radiokind {
+	width: 100px;
+	color: #333;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.HotRadio .itemContent .radiokind:hover {
+	color: #529fb1;
+}
+
+.HotSinger {
+	width: 320px;
+	overflow: hidden;
+	float: right;
+}
+
+.HotSinger .itemTitle {
+	overflow: hidden;
+	width: 350px;
+	background: url(../image/hotsinger.jpg) no-repeat 0 0;
+}
+
+.HotSinger .itemTitle h3 {
+	margin-right: 15px;
+}
+
+.itemTitle .tabT span:last-child {
+	margin-right: 0;
+}
+
+.HotSinger .itemContent {
+	overflow: hidden;
+	width: 330px;
+}
+
+.HotSinger .itemContent .firstU1 {
+	width: 100%;
+	position: relative;
+	height: 320px;
+}
+
+.HotSinger .itemContent .firstU1 li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 330px;
+	height: 320px;
+}
+
+.HotSinger .itemContent .secondul {
+	position: relative;
+	width: 330px;
+	height: 270px;
+}
+
+.HotSinger .itemContent .secondul li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 270px;
+}
+
+.HotSinger .cptMid {
+	float: left;
+	overflow: hidden;
+	width: 160px;
+	height: 160px;
+	padding: 0;
+	margin: 0 5px 5px 0;
+}
+
+.HotSinger .cptMid:hover .Cover {
+	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: 160px;
+	background: rgba(0, 0, 0, .3);
+}
+
+.HotSinger .cptBg {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	background: url(../image/album_cpt_bg.png) right 0;
+}
+
+.HotSinger .cptMid .cptB {
+	width: 8142px;
+	background: url(../image/album_cpt_bg.png) no-repeat left bottom;
+}
+
+.HotSinger .cptB .songLisstSinger {
+	line-height: 50px;
+	color: #FFFFFF;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.HotSinger .cptSmall {
+	width: 105px;
+	height: 105px;
+	padding: 0;
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+.HotSinger .cptSmall:hover .Cover {
+	display: block;
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 105px;
+	height: 105px;
+	background: rgba(0, 0, 0, .3);
+}
+
+.HotSinger .cptSmall .cptB {
+	width: 89px;
+}
+
+.HotSinger .cptB {
+	background: none;
+}
+
+.HotSinger .itemContent .firstU1 li .tabc {
+	padding-top: 17px;
+	height: 6px;
+	line-height: 6px;
+	text-align: center;
+}
+
+.HotSinger .itemContent .firstU1 li .tabc a {
+	display: inline-block;
+	margin: 0 5px;
+	vertical-align: middle;
+}
+
+.icon-s-dot {
+	background-image: url(../image/sprite.png);
+	background-position: 0 -11px;
+	width: 6px;
+	height: 6px;
+}
+
+.partner {
+	position: relative;
+	width: 1000px;
+	overflow: hidden;
+	margin-top: 40px;
+}
+
+.friendLink {
+	margin-top: 30px;
+}
+
+.friendLink .itemTitle {
+	background: url(../image/friendLink.jpg) no-repeat 0 0;
+	padding-bottom: 30px;
+}
+
+.friendLink .itemContent {
+	height: 88px;
+	width: 1000px;
+	padding-bottom: 20px;
+}
+
+.friendLink .itemContent a {
+	display: block;
+	float: left;
+	width: 125px;
+	height: 24px;
+	margin-bottom: 20px;
+	color: #555;
+	overflow: hidden;
+}
+
+.friendLink .itemContent a:hover {
+	color: #529fb1;
+}
+
+.footerWrapper {
+	background: #2c323b;
+}
+
+.footerWrapper .footer {
+	padding-bottom: 50px;
+}
+
+.footerWrapper .footer .links {
+	text-align: center;
+	position: relative;
+	border-bottom: 1px solid #3d424a;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #BBBBBB;
+}
+
+.footerWrapper .footer .links a {
+	color: #BBBBBB;
+	padding: 10px;
+}
+
+.footerWrapper .footer .links a:hover {
+	color: #529fb1;
+}
+
+.copyright {
+	width: 1000px;
+	text-align: center;
+	margin: 40px auto 0;
+}
+
+.footer .copyright p {
+	line-height: 30px;
+	text-align: center;
+	color: #b1b4b9;
+}
+
+.footer .copyright a {
+	color: #999;
+}
+
+.footer .copyright .footerIcon {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	margin-top: -2px;
+	background: url(../image/footer_icon.png) no-repeat 0 0;
+}
+
+.office-verification {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	padding: 5px 10px;
+	background: url(../image/logo_down.png) no-repeat 0 0;
+}

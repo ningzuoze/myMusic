@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../style/res.css" />
+	<link rel="stylesheet" href="../style/reset.css" />
+	<link href="../favicon.ico" rel="shortcut icon" />
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/index.js"></script>
+	<title>管理员登陆页面</title>
+</head>
+
+<body>
+	<div class="bgImg">
+		<img src="../image/res/bg.jpg" alt="bgImg" srcset="">
+	</div>
+	<div class="userRes">
+		<div class="userRes_t">
+			<span>管理员登陆</span>
+		</div>
+		<div class="userRes_c">
+			<div class="userRes_c_t">
+				欢迎加入
+				<span>我爱音乐网</span>
+			</div>
+			<div class="userRes_c_input">
+				<form action="doLogin.php" method="post">
+					<div class="userRes_c_input_uname">
+						<label for="UserName">账号：</label>
+						<input name="UserName" id="UserName" type="text" placeholder="请输入账号">
+					</div>
+					<div class="userRes_c_input_upassword">
+						<label for="UserPassword">密码：</label>
+						<input name="UserPassword" id="UserPassword" type="password" placeholder="请输入密码">
+					</div>
+					<div class="userRes_c_input_upasswords" style="width:200px; float:left; margin-right:39px;">
+						<label for="getVerify">验证码：</label>
+						<input name="getVerify" id="getVerify" type="text" style="width: 120px; border:none;" placeholder="请确定验证码">
+					</div>
+					<img src="getVerify.php" style="margin-top:5px;float:left;">
+					<div class="userRes_c_input_autoLogin">
+						<input type="checkbox" id="autoLogin" class="autoLogin" name="autoFlag" value="1">
+						<label for="autoLogin">自动登陆(一周内自动登陆)</label>
+					</div>
+					<div class="userRes_c_input_Sub">
+						<button type="submit" class="sBtn">登陆管理员账号</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

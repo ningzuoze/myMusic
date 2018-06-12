@@ -1,0 +1,50 @@
+@charset "utf-8";
+/*css Document*/
+body,ul,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,iput{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+textarea{resize:none;}
+a{text-decoration:none; color: #656565;}
+/*清浮动*/
+.clearfix:after{content:""; display:block; clear:both;}
+.clearfix(zoom:1)
+/*初始化*/
+a, blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, img, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.search_input input, body, button, html {
+    font: 13px/1.5 \5FAE\8F6F\96C5\9ED1,simsun,sans-serif;
+}
+p{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+div{
+	display: block;
+}
+button{
+	cursor: pointer;
+	padding: 0;
+	border: 0 none;
+}
+a, img, textarea {
+    outline: none;
+}
+a, h1, h2, h3, h4, h5, h6, p {
+    font-size: 100%;
+}
+li, ol, ul {
+    list-style: none;
+}
+.mainPage{
+	width: 100%;
+	min-width:1000px;
+	margin: 0 auto;
+	position: relative;
+}
+/*初始化结束*/

@@ -1,0 +1,29 @@
+<?php
+    require_once("../include.php");
+//获取传入参数
+    $username=$_POST['UserName'];
+    $passwprd=md5($_POST['UserPassword']);
+    $verify=$_POST['getVerify'];
+//定义的全局变量
+    $verify1=$_SESSION['verify'];
+    $autoFlay=$_POST['autoFlag'];
+
+//判断验证码是否相同
+    if($verify==$verify1){
+        $sql="select * from wam_admin where usename='{$username}' and password='{$passwprd}'";
+        $row=checkAdmin($sql);
+        if($row){
+//判断是否选择自动登陆
+            if($autoFlay){
+                setcookie("adminId",$row["id"],time()+7*24*3600);
+                setcookie("adminName",$row["usename"],time()+7*24*3600);
+            }
+            $_SESSION["adminName"]=$row['usename'];
+            $_SESSION["adminId"]=$row['id'];            
+            alertMes("登录成功","index.php");
+        }else{
+            alertMes("登录失败，重新登陆","adminLogin.html");
+        }
+    }else{
+        alertMes("验证码错误","adminLogin.html");
+    }
