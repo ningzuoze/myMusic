@@ -2,7 +2,7 @@
 //管理员页面的操作
     require_once '../include.php';
     $act=$_REQUEST["act"];
-    $id=$_REQUEST['id'];
+    @$id=$_REQUEST['id'];
 //管理员账户退出操作
     if($act=="logout"){
         logout();
