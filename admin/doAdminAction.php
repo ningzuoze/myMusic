@@ -6,7 +6,7 @@
 //管理员账户退出操作
     if($act=="logout"){
         logout();
-//添加管理员操作s
+//添加管理员操作
     }elseif ($act=="addAdmin")  {
         $mes=addAdmin();    
 //编辑管理员操作
@@ -15,7 +15,18 @@
 //删除管理员操作
     }elseif($act=="delAdmin"){
         $mes=delAdmin($id);
+//添加个歌曲分类        
+    }elseif($act=="addCate"){
+        $mes=addCate();
+//编辑分类信息操作
+    }elseif($act=="editCate"){
+        $mes=editCate($id);        
+//删除分类信息        
+    }elseif($act=="delCate"){
+        $mes=delCate($id);
     }
+
+    
 
 ?>
 

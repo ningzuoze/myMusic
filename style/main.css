@@ -751,7 +751,7 @@
 
 .newSongList .tabc a {
 	display: block;
-	z-index: 999;
+	z-index: 99;
 	position: relative;
 	overflow: hidden;
 	padding: 0 10px;
