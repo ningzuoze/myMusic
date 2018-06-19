@@ -319,7 +319,7 @@
 
 .slider {
     position: relative;
-    height: 550px;
+    height: 450px;
     min-width: 1004px;
     width: 100%;
     overflow: hidden;
@@ -862,7 +862,6 @@
 	background: url(../image/albumlist.jpg) no-repeat 0 0;
 	padding-bottom: 20px;
 }
-
 .itemTitle {
 	height: 30px;
 }
@@ -1281,3 +1280,4 @@
 	padding: 5px 10px;
 	background: url(../image/logo_down.png) no-repeat 0 0;
 }
+/*音乐播放器*/

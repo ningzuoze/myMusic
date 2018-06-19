@@ -1,921 +1,1019 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style/main.css" />
-	<link rel="stylesheet" href="style/reset.css" />
-	<link href="favicon.ico" rel="shortcut icon" />
-	<script src="js/jquery.min.js"></script>
-	<script src="js/index.js"></script>
-	<title>我爱音乐网</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style/audio.css" />
+		<link rel="stylesheet" href="style/main.css" />
+		<link rel="stylesheet" href="style/reset.css" />
+		<link href="favicon.ico" rel="shortcut icon" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/index.js"></script>
+		<script src="js/audio.js"></script>
+		<title>我爱音乐网</title>
+	</head>
 
-<body>
-	<div class="mainPage">
-		<div class="header">
-			<h1 class="logo">
+	<body>
+		<div class="mainPage">
+			<div class="header">
+				<h1 class="logo">
 				<a href="index.html">
 					<img src="image/logo.png" style="width: 225px;height: 55px;margin-top: -12px;" alt="logo" />
 				</a>
 			</h1>
-			<div class="search">
-				<div class="search_input">
-					<input type="text" placeholder="正云 下定决心忘记你" />
-					<div class="search_btn">
-						<i class="search_icon"></i>
+				<div class="search">
+					<div class="search_input">
+						<input type="text" placeholder="正云 下定决心忘记你" />
+						<div class="search_btn">
+							<i class="search_icon"></i>
+						</div>
+					</div>
+				</div>
+				<div class="toNav">
+					<div id="login_area" class="login_area">
+						<div id="login_in" class="login_in">
+							<a id="login_btn" class="login_btn">登录</a>
+							<a target="_blank" href="register.html" class="regin_btn" id="regin_btn">注册</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="toNav">
-				<div id="login_area" class="login_area">
-					<div id="login_in" class="login_in">
-						<a id="login_btn" class="login_btn">登录</a>
-						<a target="_blank" href="register.html" class="regin_btn" id="regin_btn">注册</a>
+			<div class="navWrap">
+				<div class="nav">
+					<ul class="homeNav">
+						<li>
+							<a class="normal active" href="#">首页</a>
+						</li>
+						<li>
+							<a class="normal" href="#">推荐</a>
+						</li>
+						<li>
+							<a class="normal" href="#">榜单</a>
+						</li>
+						<li>
+							<a class="normal" href="#">个人信息</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 轮播图 -->
+			<div class="slider" id="slider">
+				<div class="slider-inner">
+					<div class="item">
+						<img class="img" src="image/SowingMap/SowingIMG1.jpg">
+					</div>
+					<div class="item">
+						<img class="img" src="image/SowingMap/SowingIMG2.jpg">
+					</div>
+					<div class="item">
+						<img class="img" src="image/SowingMap/SowingIMG3.jpg">
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="navWrap">
-			<div class="nav">
-				<ul class="homeNav">
-					<li>
-						<a class="normal active" href="#">首页</a>
-					</li>
-					<li>
-						<a class="normal" href="#">推荐</a>
-					</li>
-					<li>
-						<a class="normal" href="#">榜单</a>
-					</li>
-					<li>
-						<a class="normal" href="#">个人信息</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- 轮播图 -->
-        <div class="slider" id="slider">
-          <div class="slider-inner">
-            <div class="item">
-              <img class="img" src="image/SowingMap/SowingIMG1.jpg">
-            </div>
-            <div class="item">
-              <img class="img" src="image/SowingMap/SowingIMG2.jpg">
-            </div>
-            <div class="item">
-              <img class="img" src="image/SowingMap/SowingIMG3.jpg">
-            </div>
-          </div>
-		</div>
-		<!-- 轮播图结束 -->
-		<div class="content" id="content">
-			<div class="subContentM" id="secondContent">
-				<!--精选歌单-->
-				<div class="selectSongList">
-					<div class="itemTitle">
-						<h3>
+			<!-- 轮播图结束 -->
+			<div class="content" id="content">
+				<div class="subContentM" id="secondContent">
+					<!--精选歌单-->
+					<div class="selectSongList">
+						<div class="itemTitle">
+							<h3>
 							<b>精选</b>"歌单"</h3>
-						<a href="#" class="morefr">更多</a>
+							<a href="#" class="morefr">更多</a>
+						</div>
+						<div class="itemContent">
+							<div class="cpt cptBig">
+								<p class="cptT">
+									<span class="icon icon-select_icon"></span>
+									<span class="num">73.6万</span>
+								</p>
+								<a href="#">
+									<img src="image/20170728154307453221.jpg" width="325" height="325">
+									<div class="Cover"></div>
+								</a>
+								<div class="cptB">
+									<p class="songListName">中国新歌声第二季 合辑</p>
+									<p class="songListSinger">六六</p>
+								</div>
+							</div>
+							<div class="cpt cptMid">
+								<p class="cptT">
+									<span class="icon icon-select_icon"></span>
+									<span class="num">52万</span>
+								</p>
+								<a href="#">
+									<img src="image/20170803174123166111.jpg" width="160px" height="160px">
+									<div class="Cover"></div>
+								</a>
+								<div class="cptB">
+									<p class="songListName">成军纪念，TFBOYS的成长回忆录</p>
+									<p class="songLisstSinger">酷小狗</p>
+								</div>
+							</div>
+							<div class="cpt cptMid">
+								<p class="cptT">
+									<span class="icon icon-select_icon"></span>
+									<span class="num">2396.5万</span>
+								</p>
+								<a href="#">
+									<img src="image/20170527180146229856.jpg" width="160px" height="160px">
+									<div class="Cover"></div>
+								</a>
+								<div class="cptB">
+									<p class="songListName">有没有那么一首歌，一听见就崩溃了</p>
+									<p class="songLisstSinger">世纪缘</p>
+								</div>
+							</div>
+							<div class="cpt cptMid">
+								<p class="cptT">
+									<span class="icon icon-select_icon"></span>
+									<span class="num">273.8万</span>
+								</p>
+								<a href="#">
+									<img src="image/20170728152759138049.jpg" width="160px" height="160px">
+									<div class="Cover"></div>
+								</a>
+								<div class="cptB">
+									<p class="songListName">没有你陪伴我真的好孤单 梦然发新歌</p>
+									<p class="songLisstSinger">蓝雨</p>
+								</div>
+							</div>
+							<div class="cpt cptMid">
+								<p class="cptT">
+									<span class="icon icon-select_icon"></span>
+									<span class="num">3252.0万</span>
+								</p>
+								<a href="#">
+									<img src="image/20170222004822329821.jpg" width="160px" height="160px">
+									<div class="Cover"></div>
+								</a>
+								<div class="cptB">
+									<p class="songListName">回味经典网络歌曲</p>
+									<p class="songLisstSinger">Rich2G</p>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="itemContent">
-						<div class="cpt cptBig">
-							<p class="cptT">
-								<span class="icon icon-select_icon"></span>
-								<span class="num">73.6万</span>
-							</p>
-							<a href="#">
-								<img src="image/20170728154307453221.jpg" width="325" height="325">
-								<div class="Cover"></div>
-							</a>
-							<div class="cptB">
-								<p class="songListName">中国新歌声第二季 合辑</p>
-								<p class="songListSinger">六六</p>
-							</div>
-						</div>
-						<div class="cpt cptMid">
-							<p class="cptT">
-								<span class="icon icon-select_icon"></span>
-								<span class="num">52万</span>
-							</p>
-							<a href="#">
-								<img src="image/20170803174123166111.jpg" width="160px" height="160px">
-								<div class="Cover"></div>
-							</a>
-							<div class="cptB">
-								<p class="songListName">成军纪念，TFBOYS的成长回忆录</p>
-								<p class="songLisstSinger">酷小狗</p>
-							</div>
-						</div>
-						<div class="cpt cptMid">
-							<p class="cptT">
-								<span class="icon icon-select_icon"></span>
-								<span class="num">2396.5万</span>
-							</p>
-							<a href="#">
-								<img src="image/20170527180146229856.jpg" width="160px" height="160px">
-								<div class="Cover"></div>
-							</a>
-							<div class="cptB">
-								<p class="songListName">有没有那么一首歌，一听见就崩溃了</p>
-								<p class="songLisstSinger">世纪缘</p>
-							</div>
-						</div>
-						<div class="cpt cptMid">
-							<p class="cptT">
-								<span class="icon icon-select_icon"></span>
-								<span class="num">273.8万</span>
-							</p>
-							<a href="#">
-								<img src="image/20170728152759138049.jpg" width="160px" height="160px">
-								<div class="Cover"></div>
-							</a>
-							<div class="cptB">
-								<p class="songListName">没有你陪伴我真的好孤单 梦然发新歌</p>
-								<p class="songLisstSinger">蓝雨</p>
-							</div>
-						</div>
-						<div class="cpt cptMid">
-							<p class="cptT">
-								<span class="icon icon-select_icon"></span>
-								<span class="num">3252.0万</span>
-							</p>
-							<a href="#">
-								<img src="image/20170222004822329821.jpg" width="160px" height="160px">
-								<div class="Cover"></div>
-							</a>
-							<div class="cptB">
-								<p class="songListName">回味经典网络歌曲</p>
-								<p class="songLisstSinger">Rich2G</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--精选歌单-->
-				<!--热门榜单-->
-				<div class="itemM HotSongList">
-					<div class="itemTitle">
-						<h3>
+					<!--精选歌单-->
+					<!--热门榜单-->
+					<div class="itemM HotSongList">
+						<div class="itemTitle">
+							<h3>
 							<b>热门</b>"榜单"</h3>
-						<a target="_blank" href="#" class="morefr">更多</a>
+							<a target="_blank" href="#" class="morefr">更多</a>
+						</div>
+						<div class="itemContent">
+							<div class="listItem">
+								<a href="#">
+									<span class="arrow icon-big_arrow_right"></span>
+									<img src="image/T1M4h4BKKj1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
+									<div class="list">
+										<dl>
+											<dt>酷狗飙升榜</dt>
+											<dd>1 . 周震南 - 整整两年了 (Live)</dd>
+											<dd>2 . 赵天宇 - Faith (Live)</dd>
+										</dl>
+									</div>
+								</a>
+							</div>
+							<div class="listItem">
+								<a href="#">
+									<span class="arrow icon-big_arrow_right"></span>
+									<img src="image/T1fHd4BXd_1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
+									<div class="list">
+										<dl>
+											<dt>酷狗TOP500</dt>
+											<dd>1 . 赵雷 - 成都</dd>
+											<dd>2 . 杨宗纬、张碧晨 - 凉凉【三生三世十里桃花电视剧片尾曲】</dd>
+										</dl>
+									</div>
+								</a>
+							</div>
+							<div class="listItem">
+								<a href="#">
+									<span class="arrow icon-big_arrow_right"></span>
+									<img src="image/T1Fpd4BKbg1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
+									<div class="list">
+										<dl>
+											<dt>网络红歌榜</dt>
+											<dd>1 . 金南玲 - 逆流成河</dd>
+											<dd>2 . 庄心妍 - 走着走着就散了</dd>
+										</dl>
+									</div>
+								</a>
+							</div>
+						</div>
 					</div>
-					<div class="itemContent">
-						<div class="listItem">
-							<a href="#">
-								<span class="arrow icon-big_arrow_right"></span>
-								<img src="image/T1M4h4BKKj1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
-								<div class="list">
-									<dl>
-										<dt>酷狗飙升榜</dt>
-										<dd>1 . 周震南 - 整整两年了 (Live)</dd>
-										<dd>2 . 赵天宇 - Faith (Live)</dd>
-									</dl>
-								</div>
-							</a>
-						</div>
-						<div class="listItem">
-							<a href="#">
-								<span class="arrow icon-big_arrow_right"></span>
-								<img src="image/T1fHd4BXd_1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
-								<div class="list">
-									<dl>
-										<dt>酷狗TOP500</dt>
-										<dd>1 . 赵雷 - 成都</dd>
-										<dd>2 . 杨宗纬、张碧晨 - 凉凉【三生三世十里桃花电视剧片尾曲】</dd>
-									</dl>
-								</div>
-							</a>
-						</div>
-						<div class="listItem">
-							<a href="#">
-								<span class="arrow icon-big_arrow_right"></span>
-								<img src="image/T1Fpd4BKbg1RCvBVdK.jpg_240x240.jpg" width="98" height="98">
-								<div class="list">
-									<dl>
-										<dt>网络红歌榜</dt>
-										<dd>1 . 金南玲 - 逆流成河</dd>
-										<dd>2 . 庄心妍 - 走着走着就散了</dd>
-									</dl>
-								</div>
-							</a>
-						</div>
-					</div>
+					<!--热门榜单-->
 				</div>
-				<!--热门榜单-->
-			</div>
-			<div class="subContentM">
-				<div class="itemM newSongList">
-					<div class="itemTitle hasBorder">
-						<h3>
+				<div class="subContentM">
+					<div class="itemM newSongList">
+						<div class="itemTitle hasBorder">
+							<h3>
 							<b>新歌</b>
 							"首发"
 						</h3>
-						<div class="tabT" id="songtabMenu">
-							<span class="MenuItem">华语</span>
-							<span class="MenuItem">欧美</span>
-							<span class="MenuItem">韩国</span>
-							<span class="MenuItem">日本</span>
-						</div>
-						<button class="playAll">
+							<div class="tabT" id="songtabMenu">
+								<span class="MenuItem">华语</span>
+								<span class="MenuItem">欧美</span>
+								<span class="MenuItem">韩国</span>
+								<span class="MenuItem">日本</span>
+							</div>
+							<button class="playAll">
 							<span class="ioc ioc-play"></span>
 							<em>全部播放</em>
 						</button>
-					</div>
-					<div class="itemContent">
-						<div class="tabc" id="SongtabContent" style="margin-top: 0px;">
-							<ul style="display: block; z-index: 2;">
-								<li>
-									<a href="#">
-										<span class="songName">杨坤 - 流浪狗也有乡愁</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:05</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:28</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">神马乐团 - 来不及</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">GAI - 王者降临</span>
-										<span class="songTips"></span>
-										<span class="songTime">02:55</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">A-Lin - 未单身</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">郑源 - 刺青</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:15</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:45</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">阿悄 - 绿茶和白莲</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:10</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-							</ul>
-							<ul style="display: none; z-index: 1;">
-								<li>
-									<a href="#">
-										<span class="songName">杨坤 - 流浪狗也有乡愁</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:05</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:28</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">神马乐团 - 来不及</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">GAI - 王者降临</span>
-										<span class="songTips"></span>
-										<span class="songTime">02:55</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">A-Lin - 未单身</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">郑源 - 刺青</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:15</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:45</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">阿悄 - 绿茶和白莲</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:10</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-							</ul>
-							<ul style="display: none; z-index: 1;">
-								<li>
-									<a href="#">
-										<span class="songName">杨坤 - 流浪狗也有乡愁</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:05</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:28</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">神马乐团 - 来不及</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">GAI - 王者降临</span>
-										<span class="songTips"></span>
-										<span class="songTime">02:55</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">A-Lin - 未单身</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">郑源 - 刺青</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:15</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:45</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">阿悄 - 绿茶和白莲</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:10</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-							</ul>
-							<ul style="display: none; z-index: 1;">
-								<li>
-									<a href="#">
-										<span class="songName">杨坤 - 流浪狗也有乡愁</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:05</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:28</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">神马乐团 - 来不及</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">GAI - 王者降临</span>
-										<span class="songTips"></span>
-										<span class="songTime">02:55</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">A-Lin - 未单身</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:34</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">郑源 - 刺青</span>
-										<span class="songTips"></span>
-										<span class="songTime">04:15</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:45</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<span class="songName">阿悄 - 绿茶和白莲</span>
-										<span class="songTips"></span>
-										<span class="songTime">03:10</span>
-										<span class="icon playBtn icon-play" style="display: none;"></span>
-										<span class="icon downloadBtn icon-download" style="display: none;"></span>
-									</a>
-								</li>
-							</ul>
+						</div>
+						<div class="itemContent">
+							<div class="tabc" id="SongtabContent" style="margin-top: 0px;">
+								<ul style="display: block; z-index: 2;">
+									<li>
+										<a href="#">
+											<span class="songName">杨坤 - 流浪狗也有乡愁</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:05</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:28</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">神马乐团 - 来不及</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">GAI - 王者降临</span>
+											<span class="songTips"></span>
+											<span class="songTime">02:55</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">A-Lin - 未单身</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">郑源 - 刺青</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:15</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:45</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">阿悄 - 绿茶和白莲</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:10</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+								</ul>
+								<ul style="display: none; z-index: 1;">
+									<li>
+										<a href="#">
+											<span class="songName">杨坤 - 流浪狗也有乡愁</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:05</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:28</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">神马乐团 - 来不及</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">GAI - 王者降临</span>
+											<span class="songTips"></span>
+											<span class="songTime">02:55</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">A-Lin - 未单身</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">郑源 - 刺青</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:15</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:45</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">阿悄 - 绿茶和白莲</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:10</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+								</ul>
+								<ul style="display: none; z-index: 1;">
+									<li>
+										<a href="#">
+											<span class="songName">杨坤 - 流浪狗也有乡愁</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:05</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:28</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">神马乐团 - 来不及</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">GAI - 王者降临</span>
+											<span class="songTips"></span>
+											<span class="songTime">02:55</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">A-Lin - 未单身</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">郑源 - 刺青</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:15</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:45</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">阿悄 - 绿茶和白莲</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:10</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+								</ul>
+								<ul style="display: none; z-index: 1;">
+									<li>
+										<a href="#">
+											<span class="songName">杨坤 - 流浪狗也有乡愁</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:05</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">崔子格 - 情未央【秦时明月丽人心电视剧插曲】</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:28</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">神马乐团 - 来不及</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">GAI - 王者降临</span>
+											<span class="songTips"></span>
+											<span class="songTime">02:55</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">A-Lin - 未单身</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:34</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">郑源 - 刺青</span>
+											<span class="songTips"></span>
+											<span class="songTime">04:15</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">威仔、阿夏 - 这个夏天我们离别</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:45</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="songName">阿悄 - 绿茶和白莲</span>
+											<span class="songTips"></span>
+											<span class="songTime">03:10</span>
+											<span class="icon playBtn icon-play" style="display: none;"></span>
+											<span class="icon downloadBtn icon-download" style="display: none;"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="pages p">
+							<a class="prev disable">上一页</a>
+							<div class="page">
+								<span class="currentpage">1</span>/
+								<span class="allpage">3</span>
+							</div>
+							<a class="next">下一页</a>
 						</div>
 					</div>
-					<div class="pages p">
-						<a class="prev disable">上一页</a>
-						<div class="page">
-							<span class="currentpage">1</span>/
-							<span class="allpage">3</span>
-						</div>
-						<a class="next">下一页</a>
-					</div>
-				</div>
-				<div class="itemM albumlist">
-					<div class="itemTitle">
-						<h3>
+					<div class="itemM albumlist">
+						<div class="itemTitle">
+							<h3>
 							<b>推荐</b>MV
 						</h3>
-						<a target="_blank" href="#" class="morefr">更多</a>
-					</div>
-					<div class="itemContent">
-						<div class="cpt cptBigL">
-							<a href="#" target="_blank">
-								<img src="image/20170823100958441228.jpg" / width="320" height="175">
-								<p class="cptBg"></p>
-								<div class="cptB">
-									<p class="songListName">平凡之路 (2017乐人·Live:朴树“好好地II”巡回演唱会上海站)</p>
-									<p class="songListSinger">朴树</p>
-								</div>
-							</a>
+							<a target="_blank" href="#" class="morefr">更多</a>
 						</div>
-						<div class="cpt cptMidL">
-							<a href="#" target="_blank">
-								<img src="image/20170823100226628522.jpg" width="154" height="84">
-								<p class="cptBg"></p>
-								<div class="cptB">
-									<p class="songListName">黑色星期二 (歌词版)</p>
-									<p class="songListSinger">陶喆</p>
-								</div>
-							</a>
-						</div>
-						<div class="cpt cptMidL">
-							<a href="#" target="_blank">
-								<img src="image/20170823100119672414.jpg" width="154" height="84">
-								<p class="cptBg"></p>
-								<div class="cptB">
-									<p class="songListName">Bad Girls Need Love Too (剧情版)</p>
-									<p class="songListSinger">艾菲、李斯丹妮、Blow</p>
-								</div>
-							</a>
+						<div class="itemContent">
+							<div class="cpt cptBigL">
+								<a href="#" target="_blank">
+									<img src="image/20170823100958441228.jpg" / width="320" height="175">
+									<p class="cptBg"></p>
+									<div class="cptB">
+										<p class="songListName">平凡之路 (2017乐人·Live:朴树“好好地II”巡回演唱会上海站)</p>
+										<p class="songListSinger">朴树</p>
+									</div>
+								</a>
+							</div>
+							<div class="cpt cptMidL">
+								<a href="#" target="_blank">
+									<img src="image/20170823100226628522.jpg" width="154" height="84">
+									<p class="cptBg"></p>
+									<div class="cptB">
+										<p class="songListName">黑色星期二 (歌词版)</p>
+										<p class="songListSinger">陶喆</p>
+									</div>
+								</a>
+							</div>
+							<div class="cpt cptMidL">
+								<a href="#" target="_blank">
+									<img src="image/20170823100119672414.jpg" width="154" height="84">
+									<p class="cptBg"></p>
+									<div class="cptB">
+										<p class="songListName">Bad Girls Need Love Too (剧情版)</p>
+										<p class="songListSinger">艾菲、李斯丹妮、Blow</p>
+									</div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="subContentM limitHeight">
-				<!--新歌首发-->
-				<div class="itemM HotRadio">
-					<div class="itemTitle">
-						<h3>
+				<div class="subContentM limitHeight">
+					<!--新歌首发-->
+					<div class="itemM HotRadio">
+						<div class="itemTitle">
+							<h3>
 							<b>热门</b>电台
 						</h3>
+							<a href="#" class="morefr">更多</a>
+						</div>
+						<div class="itemContent">
+							<ul>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_1.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											KTV必点曲
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_2.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											中午DJ
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_3.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											酷狗热歌
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_4.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											网络红歌
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_5.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											经典
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_6.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											老情歌
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_7.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											新歌
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_8.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											动漫
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_9.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											轻音乐
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="Cover">
+											<div class="playBtn icon icon-radio_play"></div>
+										</div>
+										<div class="radiologo">
+											<img src="image/radio_10.jpg" width="100" height="100" />
+										</div>
+										<div class="radiokind">
+											最爱成名曲
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--新歌首发-->
+					<!--推荐MV-->
+					<div class="itemM HotSinger">
+						<div class="itemTitle">
+							<h3>
+							<b>热门</b>歌手
+						</h3>
+							<div class="tabT" id="tabMenu">
+								<span class="active" data="0">华语</span>
+								<span data="1" class>欧美</span>
+								<span data="2" class>日韩</span>
+								<span data="3" class>
+								<a class="more" href="#">更多</a>
+							</span>
+							</div>
+						</div>
+						<div class="itemContent">
+							<div>
+								<ul class="firstU1 clearfix" id="SingertaContent">
+									<li class="item">
+										<ul class="chinaSinger secondul clearfix" id="chinaSingerContent">
+											<li>
+												<div class="cpt cptMid">
+													<a href="#" class="singerLink">
+														<img class="singerImg" src="image/20170713161536456.jpg" />
+														<div class="Cover">
+															<div class="playBtn icon" style="display: none;">播放</div>
+														</div>
+														<p class="cptBg"></p>
+														<div class="cptB">
+															<p class="songLisstSinger">薛之谦</p>
+														</div>
+													</a>
+												</div>
+												<div class="cpt cptMid">
+													<a href="#" class="singerLink">
+														<img class="singerImg" src="image/20170810163234456.jpg" />
+														<div class="Cover">
+															<div class="playBtn icon" style="display: none;">播放</div>
+														</div>
+														<p class="cptBg"></p>
+														<div class="cptB">
+															<p class="songLisstSinger">毛不易</p>
+														</div>
+													</a>
+												</div>
+												<div class="cpt cptSmall">
+													<a class="singerLink" href="#">
+														<img src="image/20170810103307128.jpg" />
+														<div class="Cover">
+															<div clas="playBtn icon" style="display: none;">播放</div>
+														</div>
+														<p class="cptB"></p>
+														<div class="cptB">
+															<p class="songLisstSinger">TFBOYS</p>
+														</div>
+													</a>
+												</div>
+												<div class="cpt cptSmall">
+													<a class="singerLink" href="#">
+														<img src="image/20170712163421624.jpg" />
+														<div class="Cover">
+															<div clas="playBtn icon" style="display: none;">播放</div>
+														</div>
+														<p class="cptB"></p>
+														<div class="cptB">
+															<p class="songLisstSinger">鹿晗</p>
+														</div>
+													</a>
+												</div>
+												<div class="cpt cptSmall">
+													<a class="singerLink" href="#">
+														<img src="image/20170119105146606.jpg" />
+														<div class="Cover">
+															<div clas="playBtn icon" style="display: none;">播放</div>
+														</div>
+														<p class="cptB"></p>
+														<div class="cptB">
+															<p class="songLisstSinger">周杰伦</p>
+														</div>
+													</a>
+												</div>
+											</li>
+										</ul>
+										<div class="tabc" id="subMenu">
+											<a class="icon icon-s-dot icon-s_dot_hover"></a>
+											<a class="icon icon-s-dot"></a>
+											<a class="icon icon-s-dot"></a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--推荐MV-->
+				</div>
+				<div class="friendLink">
+					<div class="itemTitle">
+						<h3>
+						<b>友情</b>链接
+					</h3>
 						<a href="#" class="morefr">更多</a>
 					</div>
 					<div class="itemContent">
-						<ul>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_1.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										KTV必点曲
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_2.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										中午DJ
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_3.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										酷狗热歌
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_4.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										网络红歌
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_5.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										经典
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_6.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										老情歌
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_7.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										新歌
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_8.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										动漫
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_9.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										轻音乐
-									</div>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<div class="Cover">
-										<div class="playBtn icon icon-radio_play"></div>
-									</div>
-									<div class="radiologo">
-										<img src="image/radio_10.jpg" width="100" height="100" />
-									</div>
-									<div class="radiokind">
-										最爱成名曲
-									</div>
-								</a>
-							</li>
-						</ul>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="央视网综艺频道">央视网综艺频道</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
+						<a target="_blank" href="#" title="爱美网">爱美网</a>
 					</div>
 				</div>
-				<!--新歌首发-->
-				<!--推荐MV-->
-				<div class="itemM HotSinger">
-					<div class="itemTitle">
-						<h3>
-							<b>热门</b>歌手
-						</h3>
-						<div class="tabT" id="tabMenu">
-							<span class="active" data="0">华语</span>
-							<span data="1" class>欧美</span>
-							<span data="2" class>日韩</span>
-							<span data="3" class>
-								<a class="more" href="#">更多</a>
+			</div>
+			<div class="footerWrapper">
+				<div class="footer">
+					<div class="links">
+						<a href="#">关于酷狗</a>
+						|
+						<a href="#">监督举报</a>
+						|
+						<a href="#">广告服务</a>
+						|
+						<a href="#">版权指引</a>
+						|
+						<a href="#">隐私政策</a>
+						|
+						<a href="#">用户服务协议</a>
+						|
+						<a href="#">推广合作</a>
+						|
+						<a href="#">酷狗音乐人</a>
+						|
+						<a href="#">酷狗音乐推</a>
+						|
+						<a href="#">招聘信息</a>
+						|
+						<a href="#">客服中心</a>
+						|
+						<a href="#">用户体验提升计划</a>
+					</div>
+					<div class="copyright">
+						<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
+						<p>
+							信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339&nbsp;&nbsp;&nbsp;
+							<a href="#">粤ICP备09017694号-2</a>
+							<span class="footerIcon">
+							<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						</span>
+						</p>
+						<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026</p>
+						<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018</p>
+						<p>
+							Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2017 KuGou-Inc.All Rights Reserved
+							<a href="#" class="office-verification"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="login_popup">
+			<div class="popup_bg"></div>
+			<div class="popup">
+				<div class="popup_close">
+					<span>x</span>
+				</div>
+				<div class="popup_content">
+					<p class="popup_content_tl">登录账号</p>
+					<div class="popup_content_inout">
+						<form action="">
+							<div class="popup_content_uname">
+								<label for="UserName">账号：</label>
+								<input id="UserName" type="text" placeholder="请输入账号">
+							</div>
+							<div class="popup_content_upassword">
+								<label for="UserPassword">密码：</label>
+								<input id="UserPassword" type="text" placeholder="请输入密码">
+							</div>
+							<div class="popup_content_verify">
+								<label for="verify">验证码：</label>
+								<input id="verify" type="text" placeholder="请输入验证码">
+							</div>
+							<img src="admin/getVerify.php" alt="" style="float: left;">
+							<button type="submit" class="sBtn">登录</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="audio-box">
+			<div class="audio-container">
+				<div class="audio-cover"></div>
+				<div class="audio-view">
+					<h3 class="audio-title">未知歌曲</h3>
+					<div class="audio-body">
+						<div class="audio-backs">
+							<div class="audio-this-time">00:00</div>
+							<div class="audio-count-time">00:00</div>
+							<div class="audio-setbacks">
+								<i class="audio-this-setbacks">
+								<span class="audio-backs-btn"></span>
+							</i>
+								<span class="audio-cache-setbacks">
 							</span>
+							</div>
 						</div>
 					</div>
-					<div class="itemContent">
-						<div>
-							<ul class="firstU1 clearfix" id="SingertaContent">
-								<li class="item">
-									<ul class="chinaSinger secondul clearfix" id="chinaSingerContent">
-										<li>
-											<div class="cpt cptMid">
-												<a href="#" class="singerLink">
-													<img class="singerImg" src="image/20170713161536456.jpg" />
-													<div class="Cover">
-														<div class="playBtn icon" style="display: none;">播放</div>
-													</div>
-													<p class="cptBg"></p>
-													<div class="cptB">
-														<p class="songLisstSinger">薛之谦</p>
-													</div>
-												</a>
-											</div>
-											<div class="cpt cptMid">
-												<a href="#" class="singerLink">
-													<img class="singerImg" src="image/20170810163234456.jpg" />
-													<div class="Cover">
-														<div class="playBtn icon" style="display: none;">播放</div>
-													</div>
-													<p class="cptBg"></p>
-													<div class="cptB">
-														<p class="songLisstSinger">毛不易</p>
-													</div>
-												</a>
-											</div>
-											<div class="cpt cptSmall">
-												<a class="singerLink" href="#">
-													<img src="image/20170810103307128.jpg" />
-													<div class="Cover">
-														<div clas="playBtn icon" style="display: none;">播放</div>
-													</div>
-													<p class="cptB"></p>
-													<div class="cptB">
-														<p class="songLisstSinger">TFBOYS</p>
-													</div>
-												</a>
-											</div>
-											<div class="cpt cptSmall">
-												<a class="singerLink" href="#">
-													<img src="image/20170712163421624.jpg" />
-													<div class="Cover">
-														<div clas="playBtn icon" style="display: none;">播放</div>
-													</div>
-													<p class="cptB"></p>
-													<div class="cptB">
-														<p class="songLisstSinger">鹿晗</p>
-													</div>
-												</a>
-											</div>
-											<div class="cpt cptSmall">
-												<a class="singerLink" href="#">
-													<img src="image/20170119105146606.jpg" />
-													<div class="Cover">
-														<div clas="playBtn icon" style="display: none;">播放</div>
-													</div>
-													<p class="cptB"></p>
-													<div class="cptB">
-														<p class="songLisstSinger">周杰伦</p>
-													</div>
-												</a>
-											</div>
-										</li>
-									</ul>
-									<div class="tabc" id="subMenu">
-										<a class="icon icon-s-dot icon-s_dot_hover"></a>
-										<a class="icon icon-s-dot"></a>
-										<a class="icon icon-s-dot"></a>
-									</div>
-								</li>
+					<div class="audio-btn">
+						<div class="audio-select">
+							<div class="audio-prev"></div>
+							<div class="audio-play"></div>
+							<div class="audio-next"></div>
+							<div class="audio-menu"></div>
+							<div class="audio-volume"></div>
+						</div>
+						<div class="audio-set-volume">
+							<div class="volume-box">
+								<i><span></span></i>
+							</div>
+						</div>
+						<div class="audio-list">
+							<div class="audio-list-head">
+								<p>☺随心听</p>
+								<span class="menu-close">关闭</span>
+							</div>
+							<ul class="audio-inline">
 							</ul>
 						</div>
 					</div>
 				</div>
-				<!--推荐MV-->
-			</div>
-			<div class="friendLink">
-				<div class="itemTitle">
-					<h3>
-						<b>友情</b>链接
-					</h3>
-					<a href="#" class="morefr">更多</a>
-				</div>
-				<div class="itemContent">
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="央视网综艺频道">央视网综艺频道</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-					<a target="_blank" href="#" title="爱美网">爱美网</a>
-				</div>
 			</div>
 		</div>
-		<div class="footerWrapper">
-			<div class="footer">
-				<div class="links">
-					<a href="#">关于酷狗</a>
-					|
-					<a href="#">监督举报</a>
-					|
-					<a href="#">广告服务</a>
-					|
-					<a href="#">版权指引</a>
-					|
-					<a href="#">隐私政策</a>
-					|
-					<a href="#">用户服务协议</a>
-					|
-					<a href="#">推广合作</a>
-					|
-					<a href="#">酷狗音乐人</a>
-					|
-					<a href="#">酷狗音乐推</a>
-					|
-					<a href="#">招聘信息</a>
-					|
-					<a href="#">客服中心</a>
-					|
-					<a href="#">用户体验提升计划</a>
-				</div>
-				<div class="copyright">
-					<p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@kugou.com</p>
-					<p>
-						信息网络传播视听节目许可证 1910564 增值电信业务经营许可证粤B2-20060339&nbsp;&nbsp;&nbsp;
-						<a href="#">粤ICP备09017694号-2</a>
-						<span class="footerIcon">
-							<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;</a>
-						</span>
-					</p>
-					<p>广播电视节目制作经营许可证（粤）字第01270号&nbsp;&nbsp;&nbsp;&nbsp;营业性演出许可证穗天演440106026</p>
-					<p>穗公网监备案证第44010650010167&nbsp;&nbsp;&nbsp;&nbsp;互联网药品信息服务资格证编号（粤）-非经营性-2012-0018</p>
-					<p>
-						Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2017 KuGou-Inc.All Rights Reserved
-						<a href="#" class="office-verification"></a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="login_popup">
-		<div class="popup_bg"></div>
-		<div class="popup">
-			<div class="popup_close">
-				<span>x</span>
-			</div>
-			<div class="popup_content">
-				<p class="popup_content_tl">登录账号</p>
-				<div class="popup_content_inout">
-					<form action="">
-						<div class="popup_content_uname">
-							<label for="UserName">账号：</label>
-							<input id="UserName" type="text" placeholder="请输入账号">
-						</div>
-						<div class="popup_content_upassword">
-							<label for="UserPassword">密码：</label>
-							<input id="UserPassword" type="text" placeholder="请输入密码">
-						</div>
-						<div class="popup_content_verify">
-							<label for="verify">验证码：</label>
-							<input id="verify" type="text" placeholder="请输入验证码">
-						</div>
-						<img src="admin/getVerify.php" alt="" style="float: left;">
-						<button type="submit" class="sBtn">登录</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		
-	</div>
-</body>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			var song = [{
+					'cover': 'image/audio/cover.jpg',
+					'src': 'http://jq22.qiniudn.com/the.mp3',
+					'title': 'the xx'
+				},
+				{
+					'cover': 'image/audio/cover2.jpg',
+					'src': 'http://so1.111ttt.com:8282/2016/1/06m/24/199240145502.m4a?tflag=1494769732&pin=84bac9745fcebbd3ed5c598b97e15c39&ip=114.233.172.33#.mp3',
+					'title': '不该 - 周杰伦、张惠妹'
+				},
+				{
+					'cover': 'image/audio/cover5.jpg',
+					'src': 'http://so1.111ttt.com:8282/2015/1/10m/31/103311642007.m4a?tflag=1494769515&pin=26fa27d88422f6adb1fbca3f0f17333e&ip=114.233.172.33#.mp3',
+					'title': '再见 - 邓紫棋'
+				},
+				{
+					'cover': 'image/audio/cover3.jpg',
+					'src': 'http://so1.111ttt.com:8282/2017/1/05m/09/298092042172.m4a?tflag=1494768586&pin=f8d0e2e08864846460002b12768a9267&ip=114.233.172.33#.mp3',
+					'title': '最后一次 - 庄心妍'
+				},
+				{
+					'cover': 'image/audio/cover1.jpg',
+					'src': 'http://so1.111ttt.com:8282/2017/1/05m/09/298092036393.m4a?tflag=1494768868&pin=9a24cbf7571cb3524af1d6c883916169&ip=114.233.172.33#.mp3',
+					'title': '远走高飞 - 金志文、徐佳莹'
+				}
+			];
 
+			var audioFn = audioPlay({
+				song: song,
+				autoPlay: false //是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
+			});
+
+			/* 向歌单中添加新曲目，第二个参数true为新增后立即播放该曲目，false则不播放 */
+			audioFn.newSong({
+				'cover': 'images/cover4.jpg',
+				'src': 'http://so1.111ttt.com:8282/2016/5/06m/06/199061931237.m4a?tflag=1494769315&pin=a0b26b2dddd976d74724841f6d2641d6&ip=114.233.172.33#.mp3',
+				'title': '极乐净土 - GARNiDELiA'
+			}, false);
+
+			/* 暂停播放 */
+			//audioFn.stopAudio();
+
+			/* 开启播放 */
+			//audioFn.playAudio();
+
+			/* 选择歌单中索引为3的曲目(索引是从0开始的)，第二个参数true立即播放该曲目，false则不播放 */
+			//audioFn.selectMenu(3,true);
+
+			/* 查看歌单中的曲目 */
+			//console.log(audioFn.song);
+
+			/* 当前播放曲目的对象 */
+			//console.log(audioFn.audio);
+		});
+	</script>
 
 </html>
