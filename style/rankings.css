@@ -1,0 +1,54 @@
+.content {
+	width: 960px;
+	height: 900px;
+	box-shadow: 2px 2px 5px #888, -2px -2px 5px #888;
+}
+
+.mRankings {
+	margin: 50px 50px 0px 50px;
+}
+
+.mRankings_head h1 {
+	display: none;
+	font-size: 25px;
+}
+
+.mRankings_head {
+	margin-bottom: 10px;
+}
+
+.mRankings_content_title {
+	margin-top: 10px;
+	height: 35px;
+	line-height: 35px;
+	background: #3f8aa9;
+	box-shadow: 2px 2px 5px #535353;
+	border-radius: 5px;
+}
+
+.mRankings_content_title ul li {
+	margin-left: 10px;
+	margin-right: 150px;
+	color: #fff;
+	float: left;
+	font-size: 20px;
+}
+
+.mRankings_content_li {
+	margin-top: 20px;
+	box-shadow: 2px 2px 5px #888;
+}
+
+.mRankings_content_li ul {
+	display: block;
+	height: 40px;
+	margin-bottom: 1px;
+	border-bottom: 1px solid #999;
+}
+
+.mRankings_content_li ul li {
+	float: left;
+	line-height: 40px;	
+	margin-left: 15px;
+	margin-right: 160px;
+}

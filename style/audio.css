@@ -10,15 +10,32 @@ ul li{
 	list-style-type: none;
 }
 .audio-box{
+	position: relative;
 	z-index: 999;
 	position: fixed;
 	width: 100%;
 	min-width: 338px;
 	height: auto;
-	bottom: 0;
+	bottom: -65px;
 	left: 0;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.8);
 	color: #fff;
+	transition: bottom 1s;
+}
+.audio-box::before{
+	z-index: 1000;	
+	content: "";
+	position: absolute;
+	top: -15px;
+	right: 5%;
+	width: 57px;
+	height: 15px;
+	opacity: .8;
+	background: url(../image/audio/toppull.png) 100%;
+	/* background-color: rgba(20,50,80,0.8);	 */
+}
+.audio-box:hover{
+	bottom: 0px;
 }
 .audio-container{
 	width: 80%;
@@ -125,6 +142,7 @@ ul li{
 	cursor: pointer;
 }
 .audio-btn{
+	position: relative;
 	float: right;
 	width: 148px;
 	height: 38px;

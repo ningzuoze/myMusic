@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/audio.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/classify.css" />
+    <link href="favicon.ico" rel="shortcut icon" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/audio.js"></script>
+    <title>我爱音乐网</title>
+</head>
+
+<body>
+    <div class="mainPage">
+        <div class="header">
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="image/logo.png" style="width: 225px;height: 55px;margin-top: -12px;" alt="logo" />
+                </a>
+            </h1>
+            <div class="toNav">
+                <div id="login_area" class="login_area">
+                    <div id="login_in" class="login_in">
+                        <a id="login_btn" class="login_btn">登录</a>
+                        <a target="_blank" href="register.html" class="regin_btn" id="regin_btn">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navWrap">
+            <div class="nav">
+                <ul class="homeNav">
+                    <li>
+                        <a class="normal" href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a class="normal" href="rankings.html">榜单</a>
+                    </li>
+                    <li>
+                        <a class="normal active" href="#">歌曲分类</a>
+                    </li>
+                    <li>
+                        <a class="normal" href="#">个人收藏</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="mClassify">
+                <div class="mClassify_head">
+                    <h1>热门排行</h1>
+                    <img src="image/hotlist.jpg" />
+                </div>
+                <hr />
+                <div class="mClassify_content">
+                    <div class="mClassify_content_classify_lis">
+                        <ul>
+                            <li class="active">华语</li>
+                            <li>民谣</li>                            
+                            <li>流行</li>
+                            <li>摇滚</li>                            
+                        </ul>
+                    </div>
+                    <div class="mClassify_content_classify_music">
+                        <div class="minYao">
+                            <div class="minYao_box">
+                                <img src="image/radio_5.jpg">
+                                <p>歌名</p>
+                                <p>歌手</p>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerWrapper">
+            <div class="footerWrapper">
+                <div class="footer">
+                    <div class="links">
+                        <a href="#">关于酷狗</a>
+                        |
+                        <a href="#">监督举报</a>
+                        |
+                        <a href="#">广告服务</a>
+                        |
+                        <a href="#">版权指引</a>
+                        |
+                        <a href="#">隐私政策</a>
+                        |
+                        <a href="#">用户服务协议</a>
+                        |
+                        <a href="#">推广合作</a>
+                        |
+                        <a href="#">酷狗音乐人</a>
+                        |
+                        <a href="#">酷狗音乐推</a>
+                        |
+                        <a href="#">招聘信息</a>
+                        |
+                        <a href="#">客服中心</a>
+                        |
+                        <a href="#">用户体验提升计划</a>
+                    </div>
+                    <div class="copyright">
+                        <p>我们致力于推动网络正版音乐发展，相关版权合作请联系copyrights@woaimusic.com</p>
+                        <p>
+                            Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2004-2017 KuGou-Inc.All Rights Reserved
+                            <a href="#" class="office-verification"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login_popup">
+            <div class="popup_bg"></div>
+            <div class="popup">
+                <div class="popup_close">
+                    <span>x</span>
+                </div>
+                <div class="popup_content">
+                    <p class="popup_content_tl">登录账号</p>
+                    <div class="popup_content_inout">
+                        <form action="">
+                            <div class="popup_content_uname">
+                                <label for="UserName">账号：</label>
+                                <input id="UserName" type="text" placeholder="请输入账号">
+                            </div>
+                            <div class="popup_content_upassword">
+                                <label for="UserPassword">密码：</label>
+                                <input id="UserPassword" type="text" placeholder="请输入密码">
+                            </div>
+                            <div class="popup_content_verify">
+                                <label for="verify">验证码：</label>
+                                <input id="verify" type="text" placeholder="请输入验证码">
+                            </div>
+                            <img src="admin/getVerify.php" alt="" style="float: left;">
+                            <button type="submit" class="sBtn">登录</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="audio-box">
+            <div class="audio-container">
+                <div class="audio-cover"></div>
+                <div class="audio-view">
+                    <h3 class="audio-title">未知歌曲</h3>
+                    <div class="audio-body">
+                        <div class="audio-backs">
+                            <div class="audio-this-time">00:00</div>
+                            <div class="audio-count-time">00:00</div>
+                            <div class="audio-setbacks">
+                                <i class="audio-this-setbacks">
+                                    <span class="audio-backs-btn"></span>
+                                </i>
+                                <span class="audio-cache-setbacks">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="audio-btn">
+                        <div class="audio-select">
+                            <div class="audio-prev"></div>
+                            <div class="audio-play"></div>
+                            <div class="audio-next"></div>
+                            <div class="audio-menu"></div>
+                            <div class="audio-volume"></div>
+                        </div>
+                        <div class="audio-set-volume">
+                            <div class="volume-box">
+                                <i>
+                                    <span></span>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="audio-list">
+                            <div class="audio-list-head">
+                                <p>☺随心听</p>
+                                <span class="menu-close">关闭</span>
+                            </div>
+                            <ul class="audio-inline">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        var song = [{
+                'cover': 'image/audio/cover.jpg',
+                'src': 'http://jq22.qiniudn.com/the.mp3',
+                'title': 'the xx'
+            },
+            {
+                'cover': 'image/audio/cover2.jpg',
+                'src': 'http://so1.111ttt.com:8282/2016/1/06m/24/199240145502.m4a?tflag=1494769732&pin=84bac9745fcebbd3ed5c598b97e15c39&ip=114.233.172.33#.mp3',
+                'title': '不该 - 周杰伦、张惠妹'
+            },
+            {
+                'cover': 'image/audio/cover5.jpg',
+                'src': 'http://so1.111ttt.com:8282/2015/1/10m/31/103311642007.m4a?tflag=1494769515&pin=26fa27d88422f6adb1fbca3f0f17333e&ip=114.233.172.33#.mp3',
+                'title': '再见 - 邓紫棋'
+            },
+            {
+                'cover': 'image/audio/cover3.jpg',
+                'src': 'http://so1.111ttt.com:8282/2017/1/05m/09/298092042172.m4a?tflag=1494768586&pin=f8d0e2e08864846460002b12768a9267&ip=114.233.172.33#.mp3',
+                'title': '最后一次 - 庄心妍'
+            },
+            {
+                'cover': 'image/audio/cover1.jpg',
+                'src': 'http://so1.111ttt.com:8282/2017/1/05m/09/298092036393.m4a?tflag=1494768868&pin=9a24cbf7571cb3524af1d6c883916169&ip=114.233.172.33#.mp3',
+                'title': '远走高飞 - 金志文、徐佳莹'
+            }
+        ];
+
+        var audioFn = audioPlay({
+            song: song,
+            autoPlay: false //是否立即播放第一首，autoPlay为true且song为空，会alert文本提示并退出
+        });
+
+        /* 向歌单中添加新曲目，第二个参数true为新增后立即播放该曲目，false则不播放 */
+        audioFn.newSong({
+            'cover': 'images/cover4.jpg',
+            'src': 'http://so1.111ttt.com:8282/2016/5/06m/06/199061931237.m4a?tflag=1494769315&pin=a0b26b2dddd976d74724841f6d2641d6&ip=114.233.172.33#.mp3',
+            'title': '极乐净土 - GARNiDELiA'
+        }, false);
+
+        /* 暂停播放 */
+        //audioFn.stopAudio();
+
+        /* 开启播放 */
+        //audioFn.playAudio();
+
+        /* 选择歌单中索引为3的曲目(索引是从0开始的)，第二个参数true立即播放该曲目，false则不播放 */
+        //audioFn.selectMenu(3,true);
+
+        /* 查看歌单中的曲目 */
+        //console.log(audioFn.song);
+
+        /* 当前播放曲目的对象 */
+        //console.log(audioFn.audio);
+    });
+</script>
+
+</html>

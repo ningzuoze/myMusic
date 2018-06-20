@@ -1,0 +1,40 @@
+.content {
+	width: 960px;
+	height: 900px;
+	box-shadow: 2px 2px 5px #888, -2px -2px 5px #888;
+}
+.mClassify {
+	margin: 50px 50px 0px 50px;
+}
+
+.mClassify_head h1 {
+	display: none;
+	font-size: 25px;
+}
+
+.mClassify_head {
+	margin-bottom: 10px;
+}
+.mClassify_content_classify_lis{
+	height: 60px;
+}
+.mClassify_content_classify_lis .active{
+	color: #356e86;
+}
+.mClassify_content_classify_lis ul li{
+	cursor: pointer;
+	float: left;
+	font-size: 15px;
+	color: #97acb5;	
+	margin-top: 20px;
+	margin-left: 10px;
+}
+.mClassify_content_classify_lis ul li:hover{
+	color: #356e86;	
+}
+.minYao_box{
+	width: 130px;
+}
+.minYao_box p{
+	text-align: center;
+}
