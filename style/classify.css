@@ -3,6 +3,7 @@
 	height: 900px;
 	box-shadow: 2px 2px 5px #888, -2px -2px 5px #888;
 }
+
 .mClassify {
 	margin: 50px 50px 0px 50px;
 }
@@ -15,26 +16,64 @@
 .mClassify_head {
 	margin-bottom: 10px;
 }
-.mClassify_content_classify_lis{
-	height: 60px;
-}
-.mClassify_content_classify_lis .active{
-	color: #356e86;
-}
-.mClassify_content_classify_lis ul li{
-	cursor: pointer;
+
+.huaYu,
+.minYao,
+.yaoGun {
 	float: left;
-	font-size: 15px;
-	color: #97acb5;	
 	margin-top: 20px;
-	margin-left: 10px;
 }
-.mClassify_content_classify_lis ul li:hover{
-	color: #356e86;	
+
+.huayu_box .img,
+.minYao_box .img,
+.yaoGun_box .img {
+	position: relative;
 }
-.minYao_box{
+
+.huayu_box .img:hover .Cover,
+.minYao_box .img:hover .Cover,
+.yaoGun_box .img:hover .Cover {
+	display: block;
+}
+
+.huayu_box .img .Cover,
+.minYao_box .img .Cover,
+.yaoGun_box .img .Cover {
+	display: none;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	cursor: pointer;
+}
+
+.huayu_box,
+.minYao_box,
+.yaoGun_box {
+	margin: 10px 20px;
+	float: left;
 	width: 130px;
 }
-.minYao_box p{
+
+.huaYu_label h1,
+.minYao_label h1,
+.yaoGun_label h1 {
+	margin: 10px;
+	font-size: 15px;
+	color: #3f8aa9;
+}
+
+.text p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 	text-align: center;
+}
+
+.text .mName {
+	font-size: 15px;
+	color: #3f8aa9;
+}
+
+.text .mGeShou {
+	color: #888;
 }
